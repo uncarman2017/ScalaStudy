@@ -1,0 +1,4 @@
+rootProject.name = 'ScalaStudy'
+include 'Study1'
+findProject(':Study1')?.name = 'scala.study'
+
