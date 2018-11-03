@@ -17,7 +17,7 @@ object Exercise3 {
   }
 
   /**
-    * 固定数组
+    * 3.1 定长数组
     */
   def testFixedArray(): Unit = {
     // 整数数组，所有元素初始化为0
@@ -37,7 +37,7 @@ object Exercise3 {
   }
 
   /**
-    * 可变长数组
+    * 3.2 可变长数组
     */
   def testDynamicArray(): Unit = {
     val b = ArrayBuffer[Int]()
@@ -65,7 +65,7 @@ object Exercise3 {
   }
 
   /**
-    * 遍历数组和数组缓冲
+    * 3.3 遍历数组和数组缓冲
     */
   def testIterateArray(): Unit = {
     val a = Array(1, 2, 3, 4, 5, 6, 7, 8)
