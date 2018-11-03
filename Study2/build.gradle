@@ -10,14 +10,19 @@ sourceCompatibility = 1.8
 repositories {
     //由于国内可能无法正常访问maven中心库，这里就填写了两个基本上能正常访问的maven库地址
     maven {
-        url 'https://maven.aliyun.com/repository/public'
+//        url 'https://maven.aliyun.com/repository/public'
+        url 'http:/maven.aliyun.com/nexus/content/groups/public/'
     }
-    maven {
-        url 'https://maven.ibiblio.org/maven2/'
+    maven{
+        url 'http://central.maven.org/maven2/'
     }
+//    maven {
+//        url 'https://maven.ibiblio.org/maven2/'
+//    }
 }
 
 dependencies {
     compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.7' //添加scala基本库
+    compile group: 'org.apache.spark',name: 'spark-core_2.11',version: '2.3.2'
     testCompile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.5' //添加scala测试相关的依赖
 }

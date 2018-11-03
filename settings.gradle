@@ -1,4 +1,7 @@
 rootProject.name = 'ScalaStudy'
 include 'Study1'
 findProject(':Study1')?.name = 'scala.study'
+include 'scala.study2'
+include 'Study2'
+findProject(':Study2')?.name = 'scala.study2'
 
